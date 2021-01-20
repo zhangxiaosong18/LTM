@@ -50,7 +50,7 @@ class MatchLoss(nn.Module):
             matched_bbox_preds,
             gt_bboxes
         )
-        positive = matched_box_overlap >= 0.5
+        positive = matched_box_overlap >= 0
         pos_inds = torch.stack([matched_inds[positive], gt_labels[:, None].expand_as(matched_inds)[positive]], dim=0)
 
         # shape: [i, j]

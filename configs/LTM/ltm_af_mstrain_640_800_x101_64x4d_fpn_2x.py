@@ -32,7 +32,7 @@ model = dict(
         strides=[8, 16, 32, 64, 128],
         distance_norm=True,
         loss_bbox=dict(
-            type='GIoULoss', loss_weight=3.0),
+            type='GIoULoss', loss_weight=5.5),
         loss_pos=dict(
             type='MatchLoss', loss_weight=1.0),
         loss_neg=dict(
