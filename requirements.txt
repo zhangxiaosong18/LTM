@@ -1,0 +1,8 @@
+mmcv>=0.2.10
+numpy
+matplotlib
+six
+terminaltables
+torch>=1.1
+torchvision
+imagecorruptions
