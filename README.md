@@ -10,7 +10,7 @@ mkdir data
 ln -s /path_to_coco data/coco
 ```
 
-#### Training examples:
+#### Training example
 
 ```bash
 cd path_to_ltm
