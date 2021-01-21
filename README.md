@@ -13,7 +13,7 @@
 ```bash
 conda create -n ltm python=3.7
 conda activate ltm
-conda install pytorch==1.3.1 torchvision==0.4.2 cudatoolkit=10.1 -c pytorch
+conda install pytorch==1.3.1 torchvision==0.4.2 cudatoolkit=${CUDA_VERSION} -c pytorch
 pip install mmcv===0.2.14 pycocotools===2.0.0
 
 git clone https://github.com/zhangxiaosong18/LTM.git
