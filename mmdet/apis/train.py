@@ -48,7 +48,7 @@ def train_detector(model,
                    dataset,
                    cfg,
                    distributed=False,
-                   validate=False,
+                   validate=True,
                    logger=None):
     if logger is None:
         logger = get_root_logger(cfg.log_level)

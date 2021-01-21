@@ -5,7 +5,7 @@
 - PyTorch 1.3.1 with CUDA support
 - torchvision 0.4.2
 - mmcv 0.2.14
-- pycocotools 2.0.0
+- pycocotools 2.0.1
 
 
 ##### Step-by-step installation
@@ -14,7 +14,7 @@
 conda create -n ltm python=3.7
 conda activate ltm
 conda install pytorch==1.3.1 torchvision==0.4.2 cudatoolkit=${CUDA_VERSION} -c pytorch
-pip install mmcv===0.2.14 pycocotools===2.0.0
+pip install mmcv===0.2.14 pycocotools===2.0.1
 
 git clone https://github.com/zhangxiaosong18/LTM.git
 cd LTM
@@ -36,7 +36,7 @@ ln -s /path_to_coco data/coco
 
 ```bash
 cd path_to_ltm
-tools/dist_train.sh configs/LTM/ltm_af_r50_fpn_1x.py 8 --autoscale-lr
+tools/dist_train.sh configs/LTM/ltm_af_r50_fpn_1x.py 8 --autoscale-lr --validate
 ```
 
 For more details, please refer to the mmdetection [README.md](MMDET_README.md)
