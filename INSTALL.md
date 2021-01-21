@@ -2,7 +2,7 @@
 
 ### Requirements:
 - Python3
-- PyTorch 1.3.1 with CUDA support
+- PyTorch 1.3.1 with CUDA 10.1 support
 - torchvision 0.4.2
 - mmcv 0.2.14
 - pycocotools 2.0.0
