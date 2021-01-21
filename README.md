@@ -10,19 +10,13 @@ mkdir data
 ln -s /path_to_coco data/coco
 ```
 
-#### Training example
+## Training example
 
 ```bash
 cd path_to_ltm
 tools/dist_train.sh configs/LTM/ltm_af_mstrain_640_800_x101_64x4d_fpn_2x.py 8 --autoscale-lr
 ```
 
-#### Test on COCO test-dev
-
-```bash
-cd path_to_ltm
-tools/dist_test.sh configs/LTM/ltm_r50_fpn_1x.py work_dirs/ltm_af_mstrain_640_800_x101_64x4d_fpn_2x/latest.pth 8 --out results.pkl --eval bbox
-```
 For more details, please refer to the mmdetection [README.md](MMDET_README.md)
 
 ## Citations
