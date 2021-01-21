@@ -14,7 +14,7 @@ ln -s /path_to_coco data/coco
 
 ```bash
 cd path_to_ltm
-tools/dist_train.sh configs/LTM/ltm_af_mstrain_640_800_x101_64x4d_fpn_2x.py 8 --autoscale-lr
+tools/dist_train.sh configs/LTM/ltm_af_r50_fpn_1x.py 8 --autoscale-lr
 ```
 
 For more details, please refer to the mmdetection [README.md](MMDET_README.md)
