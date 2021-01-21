@@ -121,7 +121,7 @@ total_epochs = 12
 device_ids = range(8)
 dist_params = dict(backend='nccl')
 log_level = 'INFO'
-work_dir = './work_dirs/free_point_r101_fpn_1x'
+work_dir = './work_dirs/ltm_af_r101_fpn_1x'
 load_from = None
 resume_from = None
 workflow = [('train', 1)]

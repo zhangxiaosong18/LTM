@@ -1,14 +1,14 @@
 ## Installation 
 
-### Requirements:
+##### Requirements:
 - Python3
-- PyTorch 1.3.1 with CUDA 10.1 support
+- PyTorch 1.3.1 with CUDA support
 - torchvision 0.4.2
 - mmcv 0.2.14
 - pycocotools 2.0.0
 
 
-### Step-by-step installation
+##### Step-by-step installation
 
 ```bash
 conda create -n ltm python=3.7
@@ -23,6 +23,7 @@ python setup.py develop
 
 
 ## Usage
+##### Prepare dataset
 You will need to download and prepare the COCO dataset. It is recommended to symlink the dataset root to `path_to_ltm/data`.
 
 ```bash
@@ -31,7 +32,7 @@ mkdir data
 ln -s /path_to_coco data/coco
 ```
 
-## Training example
+##### Training example
 
 ```bash
 cd path_to_ltm
@@ -39,6 +40,7 @@ tools/dist_train.sh configs/LTM/ltm_af_r50_fpn_1x.py 8 --autoscale-lr
 ```
 
 For more details, please refer to the mmdetection [README.md](MMDET_README.md)
+
 
 ## Citations
 Please consider citing our paper in your publications if the project helps your research.

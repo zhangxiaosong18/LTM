@@ -119,7 +119,7 @@ total_epochs = 24
 device_ids = range(8)
 dist_params = dict(backend='nccl')
 log_level = 'INFO'
-work_dir = './work_dirs/free_anchor_mstrain_640_800_r101_fpn_2x'
+work_dir = './work_dirs/ltm_mstrain_640_800_r101_fpn_2x'
 load_from = None
 resume_from = None
 workflow = [('train', 1)]
