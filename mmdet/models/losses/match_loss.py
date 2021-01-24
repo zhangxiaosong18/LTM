@@ -1,26 +1,14 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch.autograd import Function
-from torch.autograd.function import once_differentiable
+
 
 from ..registry import LOSSES
 from mmdet.core import multi_apply
 from .utils import weight_reduce_loss
 
 
-class Clip(Function):
-    @staticmethod
-    def forward(ctx, x, a, b):
-        return x.clamp(a, b)
-
-    @staticmethod
-    @once_differentiable
-    def backward(ctx, grad_output):
-        return grad_output, None, None
-
-
-clip = Clip.apply
+clip = torch.clamp
 
 
 @LOSSES.register_module

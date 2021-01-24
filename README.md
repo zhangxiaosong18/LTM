@@ -36,7 +36,8 @@ ln -s /path_to_coco data/coco
 
 ```bash
 cd path_to_ltm
-tools/dist_train.sh configs/LTM/ltm_af_r50_fpn_1x.py 8 --autoscale-lr --validate
+export GPU_NUM=8
+tools/dist_train.sh configs/LTM/ltm_af_r50_fpn_1x.py ${GPU_NUM} --gpus ${GPU_NUM} --autoscale-lr --validate
 ```
 
 For more details, please refer to the mmdetection [README.md](MMDET_README.md)
